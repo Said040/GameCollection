@@ -18,4 +18,6 @@ Back onto the detailed page, you can always remove the game that you've added, e
 
 Creating this ios app was both a lof of fun and frustrating at times. I'm really glad that I had decided to work with ios. I might just make a few apps in the future and who knows maybe I'll offically publish it for others to download.
 
+<img src="screenshot1.png" width="200px" height="328"><img src="screenshot2.png" width="200px" height="328"><img src="screenshot3.png" width="200px" height="328">
+
 # That's All. Thanks!
