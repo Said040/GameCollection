@@ -1,5 +1,7 @@
-Video Demo: https://youtu.be/4yhuBCTRzt0
-Description:
+# **Video Demo:** https://youtu.be/4yhuBCTRzt0
+
+# **Description:**
+
 I contemplated the type of project I wanted to create for a few days before receiving a Discord notification that sparked an idea. Most of my friends enjoy tracking their games and writing reviews. My project would allow users to search for games, categorize them, and write reviews after completing them.
 
 Initially, I planned to create a website, similar to the homepage project, but I decided to make an iOS app instead. I believed it would be more engaging and easier for users to adopt (I say users although I was never going to officially publish the app). However, developing an iOS app proved challenging due to the Swift / SwiftUI language and learning to adopt an API.
@@ -16,4 +18,4 @@ Back onto the detailed page, you can always remove the game that you've added, e
 
 Creating this ios app was both a lof of fun and frustrating at times. I'm really glad that I had decided to work with ios. I might just make a few apps in the future and who knows maybe I'll offically publish it for others to download.
 
-That's All. Thanks!
+# That's All. Thanks!
