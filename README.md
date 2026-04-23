@@ -1,22 +1,62 @@
-# **Video Demo:** https://youtu.be/4yhuBCTRzt0
+# Game Collection iOS App
+### Video Demo: https://youtu.be/4yhuBCTRzt0
 
-# **Description:**
+### Overview
 
-I contemplated the type of project I wanted to create for a few days before receiving a Discord notification that sparked an idea. Most of my friends enjoy tracking their games and writing reviews. My project would allow users to search for games, categorize them, and write reviews after completing them.
+GameCollection is an iOS app that lets users ***search, organize, and review video games*** in a clean, minimal interface. It’s designed for players who want to track their gaming progress and reflect on completed titles.
 
-Initially, I planned to create a website, similar to the homepage project, but I decided to make an iOS app instead. I believed it would be more engaging and easier for users to adopt (I say users although I was never going to officially publish the app). However, developing an iOS app proved challenging due to the Swift / SwiftUI language and learning to adopt an API.
+### Key Features
 
-Before discussing the app, I wanted to explain the source of video game data. Initially, I planned to retrieve data directly from the internet, the same way as one would go on Google and search the game’s information. However, this approach seemed too complex and too broad. I didn't want any unnecessary information, I only wanted specific details about a game, such as its image, name, release date, description, and platforms released on. To achieve this, I needed a source of data that only had the information I needed, which is where the API comes in. Giant Bomb was the API that provided the necessary information I needed, and the GameService file structured and organized the details from Giant Bomb. Without GameService, the app wouldn’t function.
+* **Game Search (API Structured)** - Search for any game and get structured results including:
+    * Cover Image
+    * Title
+    * Release Date
+    * Description
+    * Supported Platforms
+* **Personal Game Library** - Organize games into categories:
+    * My Games
+    * In Progress
+    * Completed
+    * Wishlist
+    * (AND MORE)
+* **Review System (Unlockable)**
+    * Reviews are **only available for completed games**
+    * Write and save personalized reviews per game
+    * Encourages completion before reflection
+* **Clean & Modern UI**
+    * Gradient-based design (blue -> purple)
+    * Image-focused layout for quick recognition
+    * Horizontally scollable game sections
 
-The ContentView file, the user’s primary interaction point, contains the search function and displays game categories (My Games, In Progress, etc) from gameData. This was the first file created, and the first thing I coded was the blue to purple gradient wallpaper. When utilizing the search bar for a game, the name is sent to the API, which returns information translated by GameService that returns a scroll list of images and names for games with that name. For instance, searching ‘Tetris’ shows games like ‘Tetris DX’ and ‘The New Tetris.’
+### Tech Stack
 
-When clicking on the desired game, GameDetailView displays detailed game information collected by GameService. The page includes the game’s image, title, release date, description, platforms, four grid-patterned buttons, and a funtion I'll talk about later. These buttons add the game to a specific category on the homepage by saving the corresponding information to memory and sharing it between files. Pressing one of the four buttons will append the game's information to the ObservableObject file, which contains five category arrays. Once a button is clicked, the app takes us back home and adds the information to the environment, which is then used to update the UI when adding a different game. The GameDetialView file was my favorite to work on because before I had a started the project I had created a mockup drawing, I spent time making the app look sleek, minimal, and eye-popping.
+* **Swift/SwiftUI**
+* Giant Bomb API (game data source)
+* ObservableObject for state management
 
-Once back home, the game’s image is arranged as programmed in GameSectionView. After adding more games, you’ll notice they’re arranged vertically by category and horizontally by time added. Clicking on the images opens the previous discussed detailed view. I enjoyed designing this UI. I initially wanted the game name below the image, but it made things too small for the user to recognize. I decided to remove the name and make the image larger, as game owners already know what to look for.
+### File Highlights
 
-Back onto the detailed page, you can always remove the game that you've added, either by mistake or change of mind. However, on the detailed page for a completed game, scroll to the bottom to see a the unhidden function. Only games in the completed category allow you to write and save reviews. These reviews correlate with the specific game, allowing you to leave reviews for other completed games and review past ones. Developing this feature took longer than expected. The reason why I had only unlocked this feature until you have completed the game was so that the user can feel a sense of accomplishment when the feature unlocks, that and it only makes sense to leave a review when you've completed it.
+* **GameService**
+    * Handles API communication and filters only relevant game data
+* **ContentView**
+    * Main entry point with search and categorized game sections
+* **GameDetailView**
+    * Displays the details of the games, add/remove from categories, write reviews if completed
+* **GameSectionView**
+    * Renders the categorized game collections in a scrollable layout, **user centered**
 
-Creating this ios app was both a lof of fun and frustrating at times. I'm really glad that I had decided to work with ios. I might just make a few apps in the future and who knows maybe I'll offically publish it for others to download.
+### Why This Project?
+
+* Built to solve a real use case: **tracking and reviewing personal games**
+* Focus on **intentional data consumption**
+* Explores **iOS development with SwiftUI and API integration**
+* Emphasizes **UX decisions**
+
+### Future Implementations
+
+* Persistent Memory/Storage
+* Social Features (share reviews, friends list)
+* App Store official release
 
 <img src="screenshot1.png" width="200px" height="328"><img src="screenshot2.png" width="200px" height="328"><img src="screenshot3.png" width="200px" height="328">
 
