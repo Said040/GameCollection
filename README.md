@@ -58,6 +58,10 @@ GameCollection is an iOS app that lets users ***search, organize, and review vid
 * Social Features (share reviews, friends list)
 * App Store official release
 
+### Other Notes
+
+Making this application was a lot of fun and also frustrating at times. My favorite part of this app was coding the GameDetailView, it really brought out my creative side that I didn't really knew I had. It was because of this project that I decided to look more into front end development and think more about how I or other users want to use an app made just for them.
+
 <img src="screenshot1.png" width="200px" height="328"><img src="screenshot2.png" width="200px" height="328"><img src="screenshot3.png" width="200px" height="328">
 
 # That's All. Thanks!
